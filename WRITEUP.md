@@ -25,3 +25,14 @@ I'm going with **App Service**. For a Flask app like this one, with no unusual O
 ### Assess app changes that would change your decision.
 
 If this app needed something App Service's sandboxed environment doesn't support — like a specific system-level driver, root access, custom networking configuration, or software that has to be installed at the OS level rather than through pip — I'd have to move to a VM, since that's the only option that gives me full control over the machine. Similarly, if this were becoming a long-running production app with unpredictable, spiky traffic and I needed very fine-grained control over the exact infrastructure (custom load balancing logic, specific VM extensions, etc.), that level of control might be worth the added management overhead of a VM. But for this project, none of that applies.
+
+### Submission screenshots
+
+All required proof screenshots have been uploaded to the `example_images/` folder, replacing the original sample images and keeping the same filenames so each one is easy to match to its requirement:
+
+- `article-cms-solution.png` — the "Hello World!" article created on the deployed app
+- `azure-portal-resource-group.png` — full Resource Group contents
+- `blob-solution.png` — Blob storage endpoint URL
+- `log-solution.png` — Log stream showing an invalid login attempt and a successful one
+- `sql-storage-solution.png` — populated `users`/`posts` tables with a query result
+- `uri-redirects-solution.png` — the redirect URI on the app registration
